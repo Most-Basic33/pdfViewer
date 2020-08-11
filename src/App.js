@@ -1,25 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
+import Pdf from './Components/PDF/Pdf'
+ import resume from './resume.pdf'
 import './App.css';
 
 function App() {
+   
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <h4>Bishop Resume</h4>
+    <Pdf pdf={resume} />
+
+    <hr />
+
+    <h4>Hire Me</h4>
+    <div className="all-page-container">
+      
     </div>
+
+    <hr />
+  </div>
   );
 }
 
