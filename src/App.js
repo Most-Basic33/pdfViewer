@@ -8,14 +8,14 @@ function App() {
   return (
     <div className="App">
     <h4>Bishop Resume</h4>
+    <div className ='resume'>
     <Pdf pdf={resume} />
+    </div>
 
     <hr />
 
     <h4>Hire Me</h4>
-    <div className="all-page-container">
-      
-    </div>
+    
 
     <hr />
   </div>

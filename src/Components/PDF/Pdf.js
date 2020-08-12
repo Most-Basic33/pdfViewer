@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import {Document, Page} from 'react-pdf'
+import './page.css'
 
 const Pdf = (props)=> {
     const [numPages, setNumPages] = useState(null)
@@ -23,7 +24,12 @@ const Pdf = (props)=> {
     }
  const {pdf} = props
     return(
-        <>
+        <div className='mains'>
+         <div id='links'>
+      <a href='http://www.linkedin.com/in/bishop-walker-3201921b1 ' >View My Linkin </a> 
+         <a href='https://github.com/Most-Basic33' >View My GitHub </a> 
+         <a href='http://www.homefinderr.com/#/' >View My Personal Project </a> 
+         </div>
         <Document
           file={pdf}
           options={{ workerSrc: "/pdf.worker.js" }}
@@ -46,7 +52,7 @@ const Pdf = (props)=> {
             Next
           </button>
         </div>
-      </>
+      </div>
     );
     
 }
